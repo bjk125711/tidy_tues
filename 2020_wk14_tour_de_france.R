@@ -59,7 +59,8 @@ tdf_winners %>%
 table(tdf_winners$winner_team)
 
 # Who is the winningest team?
-# France is. The USPS had a team??
+# France is. 
+# The USPS had a team?? No was Lance Armstrong's team
 tdf_winners %>% 
   group_by(winner_team) %>% 
   summarize(n = n()) %>% 
